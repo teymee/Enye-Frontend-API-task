@@ -121,13 +121,13 @@ body {
   50% {
     width: 50%;
     background-color: black;
-    opacity: 1;
+    opacity: 0;
   }
 
   100% {
     width: 100%;
     background-color: black;
-    opacity: 1;
+    opacity: 0;
   }
 }
 
