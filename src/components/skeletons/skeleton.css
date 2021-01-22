@@ -27,7 +27,7 @@
 .skeleton-card {
   background-color: white;
   border: none;
-  width: 400px;
+ 
   margin-bottom: 50px;
   color: black;
   transition: 0.7s;
@@ -104,7 +104,7 @@
 
 @media screen and (max-width: 700px) {
   .skeleton-card {
-    width: 350px;
+   
     margin-left: -80px;
   }
 }

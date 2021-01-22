@@ -72,9 +72,9 @@ export default function ProfileList({ profiles, alt }) {
 
   function genderFilter(gender) {
     let data = currentProfile;
-
-    return data
-      .filter((data) => data.Gender.toLowerCase() === gender)
+    let filter = data.filter((data) => data.Gender.toLowerCase() === gender)
+    console.log()
+    return filter
       .map((profile) => (
         <Profile
           alt="image"
@@ -96,6 +96,8 @@ export default function ProfileList({ profiles, alt }) {
           phone={profile.PhoneNumber}
         />
       ));
+
+      
   }
 
   return (
@@ -141,10 +143,11 @@ export default function ProfileList({ profiles, alt }) {
 
           {human !== "" && genderFilter(human)}
           
-
-          {searchBar(currentProfile)}
+          {human === "" &&  (
+          searchBar(currentProfile)
+          )}
           
-          {!isLoading && searchBar(currentProfile) == "" && (
+          {!isLoading && searchBar(currentProfile) == "" && human == "" &&  (
             <div className="empty">
               <img src={empty} className="img-responsive" alt={alt} />
               <h6 className="text-center mt-5">
@@ -154,7 +157,7 @@ export default function ProfileList({ profiles, alt }) {
           )}
         </div>
 
-        {searchBar(currentProfile) != "" && (
+        {(searchBar(currentProfile) != "") && (human === "") && (
           <Pagination
             totalProfile={profile.length}
             postPerPage={postPerPage}

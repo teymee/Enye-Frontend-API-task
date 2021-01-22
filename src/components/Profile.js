@@ -12,7 +12,7 @@ export default function Profile(props) {
                 <div className=" card profile-card">
 
                         <div className="profile-image">
-                            <p className= 'text-right'> Last Login : {props.lastLogin}</p>
+                            <p className= 'text-right'> <strong>Last Login :</strong> {props.lastLogin}</p>
 
                             <img className="rounded-circle" src={person}
                                  alt={props.alt}/>
@@ -21,7 +21,7 @@ export default function Profile(props) {
                             <h6> <strong>E-mail : </strong> <i>{props.email}</i></h6>
                           
                             <h6> <strong>Credit Card : </strong> {props.creditCard}</h6>
-                            <h6> <strong>Latitude : Longitude : </strong> {props.lat} : {props.long}</h6>
+                            <h6> <strong>Latitude-Longitude : </strong> {props.lat} : {props.long}</h6>
                             <a href="/#"> <strong>{props.url}</strong></a>
                             
                         </div>
