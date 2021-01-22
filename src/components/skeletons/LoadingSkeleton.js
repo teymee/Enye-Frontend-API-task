@@ -6,7 +6,7 @@ import "./../Profile.css";
 export default function LoadingSkeleton() {
   return (
 
-    <div className="col-md-4">
+    <div className="col-xl-4 col-md-6 ">
 
 <div className="skeleton-card">
 

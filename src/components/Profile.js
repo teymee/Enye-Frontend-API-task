@@ -28,24 +28,25 @@ export default function Profile(props) {
 
                         <div className="profile-body row">
                             <div className="col-6">
-                                <p > Username: {props.userName}</p>
+                                <p > <strong>Username : </strong> {props.userName}</p>
                                 <hr/>
 
-                                <p > Phone: {props.phone}</p>
+                                <p><strong> Phone:</strong> {props.phone}</p>
                                 <hr/>
-                                <p > Gender: {props.gender}</p>
+                                <p > <strong> Gender: </strong> {props.gender}</p>
                                 <hr/>
                                
                                
-                                <p > Credit Card Type: {props.creditCardType}</p>
+                                <p >  <strong> Credit Card Type: </strong> {props.creditCardType}</p>
                                 <hr/>
                             </div>
+
                             <div className="col-6">
-                                <p > Domain Name: {props.domain}</p>
+                                <p ><strong> Domain Name: </strong> {props.domain}</p>
                                 <hr/>
-                                <p> Mac Address: {props.mac}</p>
+                                <p> <strong>Mac Address:</strong>  {props.mac}</p>
                                 <hr/>
-                                <p>Payment Method: {props.method}</p>
+                                <p> <strong>Payment Method:</strong> {props.method}</p>
                                 <hr/>
                                
 

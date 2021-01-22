@@ -106,33 +106,30 @@ export default function ProfileList({ profiles, alt }) {
         </h5>
 
         <div className="filters">
-        <div className="d-flex justify-content-between">
-        
-          <select
-            name="sele"
-            id="input"
-            className="form-control col-3"
-            onClick={(e) => setHuman(e.target.value)}
-          >
-            <option value="">Filter By</option>
-            <option value="male">Male</option>
-            <option value="female">Female</option>
-            <option value="prefer to skip">Perfer to skip</option>
-          </select>
+          <div className="  d-flex justify-content-between">
+            <input
+              className="search "
+              type="search"
+              placeholder=" &#x1F50D; Search"
+              onChange={(e) => setSearch(e.target.value)}
+            />
 
-          <input
-            className="search"
-            type="search"
-            placeholder=" &#x1F50D; Search"
-            onChange={(e) => setSearch(e.target.value)}
-          />
-        </div>
+            <select
+              name="sele"
+              id="input"
+              className="form-control"
+              onClick={(e) => setHuman(e.target.value)}
+            >
+              <option value="">Filter By</option>
+              <option value="male">Male</option>
+              <option value="female">Female</option>
+              <option value="prefer to skip">Perfer to skip</option>
+            </select>
+          </div>
         </div>
         <hr className="hr" />
       </nav>
       <div>
-        
-
         <div className="row ">
           {isLoading && (
             <>
@@ -143,15 +140,13 @@ export default function ProfileList({ profiles, alt }) {
           )}
 
           {human !== "" && genderFilter(human)}
+          
 
           {searchBar(currentProfile)}
-          {!isLoading && searchBar(currentProfile) === "" && (
+          
+          {!isLoading && searchBar(currentProfile) == "" && (
             <div className="empty">
-              <img
-                src={empty}
-                className="img-responsive"
-                alt={alt}
-              />
+              <img src={empty} className="img-responsive" alt={alt} />
               <h6 className="text-center mt-5">
                 No Data Corresponds to the Searched Keyword
               </h6>
@@ -159,12 +154,11 @@ export default function ProfileList({ profiles, alt }) {
           )}
         </div>
 
-        {searchBar(currentProfile) !== "" && (
+        {searchBar(currentProfile) != "" && (
           <Pagination
             totalProfile={profile.length}
             postPerPage={postPerPage}
             paginate={paginate}
-          
           />
         )}
       </div>

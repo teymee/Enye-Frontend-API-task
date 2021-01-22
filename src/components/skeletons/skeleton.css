@@ -1,107 +1,110 @@
-.skeleton{
-    background-color: #ddd;
-     
-     /* margin-right: 100px !important; */
+.skeleton {
+  background-color: #ddd;
 }
 
-.skeleton-image{
-    width:90px;
-    height: 90px;
-    border-radius: 50%;
+.skeleton-image {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
 }
 
-.skeleton-title{
-    width: 50%;
-    height: 16px;
+.skeleton-title {
+  width: 50%;
+  height: 16px;
 }
 
-.skeleton-text{
-    width: 70%;
-    height: 10px;
-    border-radius: 10px;
+.skeleton-text {
+  width: 70%;
+  height: 10px;
+  border-radius: 10px;
 }
 
-
-.skeleton-subtitle{
-    width: 40%;
-    height: 11px;
+.skeleton-subtitle {
+  width: 40%;
+  height: 11px;
 }
 
-.skeleton-card{
-    background-color: white;
-    border: none  ;
-     width: 400px;
-     margin-bottom: 50px;
-     color:black;
-     transition: 0.7s;
-     border-radius: 10px;
-     margin-right: 50px;
-    
+.skeleton-card {
+  background-color: white;
+  border: none;
+  width: 400px;
+  margin-bottom: 50px;
+  color: black;
+  transition: 0.7s;
+  border-radius: 10px;
+  margin-right: 50px;
 }
 
-.skeleton-body{
-    padding-top:40px;
-    padding-bottom:40px ;
-    overflow: hidden;
+.skeleton-body {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  overflow: hidden;
 }
 
-.image-body{
-    position: relative;
-    left: 50%;
-   
-    transform: translateX(-12%);
+.image-body {
+  position: relative;
+  left: 50%;
+
+  transform: translateX(-12%);
 }
 
-.text-body{
-    margin-top: 10px;
-    position: relative;
-    left: 50%;
-   
-    transform: translateX(-27%);
+.text-body {
+  margin-top: 10px;
+  position: relative;
+  left: 50%;
+
+  transform: translateX(-27%);
 }
 
-.text-title{
-    margin-top: 5px;
-    position: relative;
-    left: 50%;
-   
-    transform: translateX(-22%);
+.text-title {
+  margin-top: 5px;
+  position: relative;
+  left: 50%;
+
+  transform: translateX(-22%);
 }
 
-.text-p{
-    margin-top: 10px;
-    position: relative;
-    left: 50%;
-   
-    transform: translateX(-39%);
+.text-p {
+  margin-top: 10px;
+  position: relative;
+  left: 50%;
+
+  transform: translateX(-39%);
 }
 
-.shimmer-wrapper{
-    position:absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-   animation: loading 2.5s infinite ;
+.shimmer-wrapper {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  animation: loading 2.5s infinite;
 }
 
-.shimmer{
-    transform: skewX(-5deg);
-    width: 50%;
-    height: 100%;
-    background-color: rgba(242, 245, 250,0.7);
+.shimmer {
+  transform: skewX(-5deg);
+  width: 50%;
+  height: 100%;
+  background-color: rgba(242, 245, 250, 0.7);
 }
 
-@keyframes loading{
-    0%{
-        transform: translateX(-150%);
-    }
+@keyframes loading {
+  0% {
+    transform: translateX(-150%);
+  }
 
-    50%{
-        transform: translateX(-60%);
-    }
+  50% {
+    transform: translateX(-60%);
+  }
 
-    100%{
-        transform: translateX(150%);
-    }
+  100% {
+    transform: translateX(150%);
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .skeleton-card {
+    width: 350px;
+    margin-left: -80px;
+  }
 }

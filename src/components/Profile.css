@@ -1,207 +1,217 @@
-body{
-    width:100vw;
+body {
+  width: 100vw;
 }
 
-.profile-card{
-    background-color: white;
-   border: none  ;
-    width: 400px;
-     border-radius: 10px;
-    margin-bottom: 50px;
-    color:black;
-    transition: 0.7s;
-    /* margin-right: 100px !important; */
-    
+.profile-card {
+  background-color: white;
+  border: none;
+  width: 400px;
+  border-radius: 10px;
+  margin-bottom: 50px;
+  color: black;
+  transition: 0.7s;
 }
 
+@media screen and (max-width: 700px) {
+  .profile-card {
+    width: 350px;
+    margin-left: -80px;
+  }
 
+  nav {
+    margin-top: 50px !important;
+    width: 200% !important;
+    margin-left: -70px;
+  }
 
-.profile-image{
+  nav h5 {
+    font-size: 15px;
+    margin-bottom: 20px !important;
+  }
+
+  nav select {
+    width: 20px !important;
+    display: block;
+  }
+
+  nav .search {
+    width: 100px !important;
+    display: block !important;
+  }
+}
+
+.profile-image {
   padding-top: 30px;
   padding-bottom: 50px;
   text-align: center;
+  line-height: 25px;
 }
 
-.profile-image p{
-    font-size: 12px !important;
-    padding-right: 20px;
-    padding-bottom: 10px;
-    color: darkslategray;
+.profile-image p {
+  font-size: 12px !important;
+  padding-right: 20px;
+  padding-bottom: 10px;
+  color: darkslategray;
 }
 
-.profile-image a{
-    font-size: 12px !important;
+.profile-image a {
+  font-size: 12px !important;
 }
 
-.profile-image h5{
-    font-size: 15px !important;
+.profile-image h5 {
+  font-size: 15px !important;
 }
-.profile-image h6{
-    font-size: 13px !important;
+.profile-image h6 {
+  font-size: 13px !important;
 }
 
-.profile-image img{
-  
-   width:90px;
-   height: 90px;
-   object-fit: contain;
-   margin-left: auto;
+.profile-image img {
+  width: 90px;
+  height: 90px;
+  object-fit: contain;
+  margin-left: auto;
   margin-right: auto;
   display: block;
-
 }
 
-.profile-body{
-    font-size: 11px;
-    line-height: 15px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-bottom:30px;
-    color: rgba(32,32,32,0.9);
+.profile-body {
+  font-size: 11px;
+  line-height: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 30px;
+  color: rgba(32, 32, 32, 0.9);
 }
 
-.profile-body p{
-    font-size: 12px;
-    padding-bottom: -20px;
+.profile-body p {
+  font-size: 12px;
+  padding-bottom: -20px;
 }
 
-.profile-body hr{
-    color: rgba(32,32,32,0.9);
-    opacity: 0;
+.profile-body hr {
+  color: rgba(32, 32, 32, 0.9);
+  opacity: 0;
 }
 
-.hr{
-    margin-top: 50px;
-    margin-bottom: 50px;
-    width: 100%;
+.hr {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  width: 100%;
 }
-
-
 
 .profile-card:hover {
-    transition: 0.7s;
-    box-shadow: 0px 10px 17px 4px  rgba(32,32,32,0.09);
-     /* box-shadow: 10px 10px 5px 0px rgba(32,32,32,0.09); */
-    margin-top: -10px;
-    background-color: #F2F5FA;
-    border: none;
- }
+  transition: 0.7s;
+  box-shadow: 0px 10px 17px 4px rgba(32, 32, 32, 0.09);
+  /* box-shadow: 10px 10px 5px 0px rgba(32,32,32,0.09); */
+  margin-top: -10px;
+  background-color: #f2f5fa;
+  border: none;
+}
 
 .profile-card:hover hr {
-
-    animation: profileText 1s forwards ;
+  animation: profileText 1s forwards;
 }
 
 @keyframes profileText {
-    0%{
-        width: 0;
-        opacity:0;
-    }
+  0% {
+    width: 0;
+    opacity: 0;
+  }
 
-    50%{
-        width: 50%;
-        background-color: black;
-        opacity: 1;
-    }
+  50% {
+    width: 50%;
+    background-color: black;
+    opacity: 1;
+  }
 
-    100%{
-        width: 100%;
-        background-color: black;
-        opacity: 1;
-    }
+  100% {
+    width: 100%;
+    background-color: black;
+    opacity: 1;
+  }
 }
 
 .profile-link {
-    padding: 10px 30px;
-    border: 1px solid #F2F5FA;
-    border-radius:10px;
-    text-align: center;
-    margin-left: 25%;
-    width: 100%;
-    margin-top: 50px !important;
+  padding: 10px 30px;
+  border: 1px solid #f2f5fa;
+  border-radius: 10px;
+  text-align: center;
+  margin-left: 25%;
+  width: 100%;
+  margin-top: 50px !important;
 }
 
-.profile-link:hover{
-    background-color: #F2F5FA;
-    color: black;
-    text-decoration: none;
-    border: none;
+.profile-link:hover {
+  background-color: #f2f5fa;
+  color: black;
+  text-decoration: none;
+  border: none;
 }
 
-
-.filters{
-    padding-top: 4%;
-    padding-bottom: 0%;
+.filters {
+  padding-top: 4%;
+  padding-bottom: 0%;
 }
 
-
-
-.search{
-    background-color: transparent;
-    border: none;
-    border-bottom: 1px grey solid;
-    
+.search {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px grey solid;
 }
-.search:focus{
-    outline: none;
-    animation: search 6s forwards;
+.search:focus {
+  outline: none;
+  animation: search 6s forwards;
 }
 
 @keyframes search {
-    0%{
-       border-bottom: none;
-    }
+  0% {
+    border-bottom: none;
+  }
 
-    20%{
-        border-bottom: 2px blue solid;
-    }
+  20% {
+    border-bottom: 2px blue solid;
+  }
 
-    50%{
-        transition: 2s;
-        border-bottom: 2px blue solid;
-    }
- 
-    100%{
-        border-bottom: 2px blue solid;
-    }
+  50% {
+    transition: 2s;
+    border-bottom: 2px blue solid;
+  }
+
+  100% {
+    border-bottom: 2px blue solid;
+  }
 }
-nav{
-    margin-top: 3%;
-    margin-bottom: 3%;
-   
-    width: 100%;
-}
+nav {
+  margin-top: 3%;
+  margin-bottom: 3%;
 
-.nav-button{
-    padding: 5px 30px;
-    border: none;
-    background-color:  rgba(0, 0, 255,0.3);
-    color: white;
-    border-radius: 5px;
-    transition: 1s;
-
+  width: 100%;
 }
 
-.nav-button option{
-    transition: 1s;
-    background-color:  white;
-    color: black;
+nav select {
+  width: 200px !important;
 }
 
-option:hover{
-    background-color:  rgba(0, 0, 255,0.2) !important;
-    color: white;
+.nav-button option {
+  transition: 1s;
+  background-color: white;
+  color: black;
 }
 
-.empty{
-   margin-top: 100px;
-    
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+option:hover {
+  background-color: rgba(0, 0, 255, 0.2) !important;
+  color: white;
 }
 
-.empty img{
-   height: 300px;
+.empty {
+  margin-top: 100px;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.empty img {
+  height: 300px;
 }
