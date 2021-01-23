@@ -46,8 +46,10 @@ export default function ProfileList({ profiles, alt }) {
   };
 
   function searchBar(data) {
+
+    
     return data
-      .filter((data) => data.FirstName.toLowerCase().indexOf(search) > -1)
+      .filter((data) => (data.FirstName.toLowerCase().indexOf(search) > -1)||(data.LastName.toLowerCase().indexOf(search) > -1)) 
       .map((profile) => (
         <Profile
           key={profile.Email}
@@ -113,7 +115,7 @@ export default function ProfileList({ profiles, alt }) {
               className="search "
               type="search"
               placeholder=" &#x1F50D; Search"
-              onChange={(e) => setSearch(e.target.value)}
+              onChange={(e) => setSearch(e.target.value.toLowerCase())}
             />
 
             <select
